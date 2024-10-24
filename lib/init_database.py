@@ -1,16 +1,10 @@
 import os
+from lib.db_utils import fileExists
 
 def initGitRepo():
     command = "git init"
     os.popen(command, mode="w").close()
 
-def fileExists(fileName: str):
-
-    try:
-        file = open(fileName, "r")
-        return True
-    except:
-        return False
 
 def createGitIgnore():
     """Adds a gitignore file or appends to it"""
