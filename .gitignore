@@ -1,3 +1,5 @@
 
 # Adds the database directory to the git ignore list
 /.db
+__pycache__
+lib/__pycache__/init_database.cpython-312.pyc
